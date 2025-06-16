@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Login Portal</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="image-container">
+        <img
+          src="https://cdn.pixabay.com/photo/2024/07/13/16/19/boy-8892461_1280.png"
+          alt="Students"
+          class="student-image"
+        />
+      </div>
+      <div class="form-container">
+        <h1>Student Login</h1>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="form-group password-group">
+            <label for="password">Password:</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" name="password" required />
+              <span id="togglePassword" class="toggle-password">&#128065;</span>
+            </div>
+          </div>
+
+          <button type="submit">Login</button>
+        </form>
+        <div id="message" class="message"></div>
+        <div id="studentData" class="student-data"></div>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
